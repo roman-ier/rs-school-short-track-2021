@@ -15,7 +15,6 @@
  * The result should be 9
  */
 function getMatrixElementsSum(arr) {
-  console.log(arr);
   const arr2 = [];
   arr.forEach((element) => {
     arr2.push(...element);
