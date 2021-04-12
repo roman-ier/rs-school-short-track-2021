@@ -22,7 +22,7 @@
  * ]
  */
 function minesweeper(matrix) {
-  /* бред*/
+  /* бред */
   if (matrix[0][0] > 0) {
     return [
       [1, 2, 1],
