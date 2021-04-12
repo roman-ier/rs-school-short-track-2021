@@ -10,7 +10,7 @@
  */
 function encodeLine(str) {
   const arr = str.split('');
-  console.log(arr);
+
   let def = 0;
   let res = '';
   for (let i = 1; i <= arr.length; i++) {
