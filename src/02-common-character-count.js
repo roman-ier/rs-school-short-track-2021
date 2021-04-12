@@ -11,13 +11,15 @@
  */
 function getCommonCharacterCount(s1, s2) {
   const s = s2.split('');
-  const f = (a) => {
-    const ind = s.findIndex(a);
-    if (ind === undefined) return 0;
 
-    s[ind] = '-';
-    return 1;
-  };
+  function f(a) {
+    const ind = s.findIndex((i) => i === a);
+    if (ind >= 0) {
+      s[ind] = '-';
+      return true;
+    }
+    return false;
+  }
   return s1.split('').reduce((pv, i) => (f(i) ? pv + 1 : pv), 0);
 }
 
